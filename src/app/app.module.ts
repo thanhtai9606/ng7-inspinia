@@ -4,7 +4,7 @@ import {HttpClientModule} from'@angular/common/http';
 import {RouterModule} from '@angular/router';
 import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-
+import { NgwWowModule  } from 'ngx-wow'
 
 import { AppComponent } from './app.component';
 import {ROUTES} from './app.routes';
@@ -22,6 +22,7 @@ import { LoginComponent } from './views/login/login.component';
   imports: [
     BrowserModule,
     HttpClientModule,
+    NgwWowModule ,
     //Views
     LayoutsModule,
     MainViewModule,

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import jQuery from 'jquery';
+import $ from 'jquery';
 @Component({
   selector: 'blank',
   templateUrl: './blank.component.html',
@@ -10,13 +10,15 @@ export class BlankComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
   ngAfterViewInit() {
-    jQuery('body').addClass('gray-bg');
+    $('body').addClass('gray-bg');    
+    $('.theme-config').remove();
   }
 
   ngOnDestroy() {
-    jQuery('body').removeClass('gray-bg');
+    $('body').removeClass('gray-bg');
   }
 
 }
