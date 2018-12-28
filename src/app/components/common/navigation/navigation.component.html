@@ -28,6 +28,7 @@
         <ul class="nav nav-second-level collapse" [ngClass]="{in: activeRoute('mainView')}">
           <li><a [routerLink]="['/dashView1']">Dashboard v1</a></li>
           <li><a [routerLink]="['/dashView2']">Dashboard v2</a></li>
+         
         </ul>
       </li>
       <li [ngClass]="{active: activeRoute('minorView')}">
@@ -44,6 +45,9 @@
       </li>
       <li>
         <a [routerLink]="['/register']"><i class="fa fa-pencil"></i> <span class="nav-label">Register</span> </a>
+      </li>
+      <li class="landing_link">
+          <a target="_blank" [routerLink]="['/landingView']"><i class="fa fa-star"></i> <span class="nav-label">Landing Page</span> <span class="label label-warning pull-right">NEW</span></a>
       </li>
     </ul>
 

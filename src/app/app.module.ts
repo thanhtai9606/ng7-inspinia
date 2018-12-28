@@ -12,10 +12,12 @@ import { ToastrModule } from 'vendors/node_modules/ngx-toastr';
 import { LayoutsModule } from './components/common/layouts/layouts.module';
 import { MainViewModule } from './views/main-view/main-view.module';
 import { MinorViewModule } from './views/minor-view/minor-view.module';
+import { LoginComponent } from './views/login/login.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,7 @@ import { MinorViewModule } from './views/minor-view/minor-view.module';
     }),
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { smoothlyMenu } from '../../../../app.helpers';
 declare let $: any;
 @Component({
-  selector: 'app-basic',
+  selector: 'basic',
   templateUrl: './basic.component.html',
   styleUrls: ['./basic.component.css']
 })
@@ -86,10 +86,10 @@ export class BasicComponent implements OnInit {
 
     // Append config box / Only for demo purpose
     // Uncomment on server mode to enable XHR calls
-    // $.get("skin-config.html", function (data) {
-    //   if (!$('body').hasClass('no-skin-config'))
-    //     $('body').append(data);
-    // });
+    $.get("assets/skin-config.html", function (data) {
+      if (!$('body').hasClass('no-skin-config'))
+        $('body').append(data);
+    });
 
     // Minimalize menu
     $('.navbar-minimalize').on('click', function () {
