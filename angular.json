@@ -27,6 +27,9 @@
               "vendors/node_modules/bootstrap/dist/css/bootstrap.css",
               "vendors/node_modules/font-awesome/css/font-awesome.css",
               "vendors/node_modules/ngx-toastr/toastr.css",
+              "node_modules/datatables.net-dt/css/datatables.min.css",
+              "node_modules/datatables.net-buttons-dt/css/buttons.dataTables.css",
+              // "node_modules/datatables.net-dt/css/jquery.dataTables.css",
               "src/assets/styles/styles.css",
               "src/assets/styles/animate.css"      
             ],
@@ -36,7 +39,16 @@
               "vendors/node_modules/pace/pace.min.js",
               "vendors/node_modules/bootstrap/dist/js/bootstrap.js",
               "vendors/node_modules/jquery-slimscroll/jquery.slimscroll.min.js",
-              "node_modules/wowjs/dist/wow.js"
+              "node_modules/wowjs/dist/wow.js",
+            //  "node_modules/datatables.net/js/jquery.dataTables.js",
+              "node_modules/datatables.net/js/datatables.min.js",
+              "node_modules/jszip/dist/jszip.js",
+              "node_modules/datatables.net-bs/js/dataTables.bootstrap.js",
+              "node_modules/datatables.net-buttons/js/buttons.bootstrap.js",
+              "node_modules/datatables.net-buttons/js/buttons.colVis.js",
+              "node_modules/datatables.net-buttons/js/buttons.flash.js",
+              "node_modules/datatables.net-buttons/js/buttons.html5.js",
+              "node_modules/datatables.net-buttons/js/buttons.print.js"
             ]
           },
           "configurations": {
