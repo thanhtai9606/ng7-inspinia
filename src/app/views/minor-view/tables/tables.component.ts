@@ -13,7 +13,7 @@ export class TablesComponent implements OnInit {
     { "id": 101, "firstName": "Anil", "lastName": "Singh" },
     { "id": 102, "firstName": "Reena", "lastName": "Singh" },
     { "id": 103, "firstName": "Aradhay", "lastName": "Simgh" },
-    { "id": 104, "firstName": "Dilip", "lastName": "Singh" },
+  { "id": 104, "firstName": "Dilip", "lastName": "Singh" },
     { "id": 105, "firstName": "Alok", "lastName": "Singh" },
     { "id": 106, "firstName": "Sunil", "lastName": "Singh" },
     { "id": 107, "firstName": "Sushil", "lastName": "Singh" },
@@ -28,26 +28,30 @@ export class TablesComponent implements OnInit {
     this.dtOptions = {
       // Declare the use of the extension in the dom parameter
       dom: '<"html5buttons"B>lTfgitp',
-      data:this.dtUsers,
-      columns:[
-        { title:'ID', data:'id'},
-        { title:'FirstName' , data:'firstName'},
-        { title:'LastName', data:'lastName'}
+      data: this.dtUsers,
+      columns: [
+        { title: 'ID', data: 'id' },
+        { title: 'FirstName', data: 'firstName' },
+        { title: 'LastName', data: 'lastName' }
       ],
       // Configure the buttons
       buttons: [
         { extend: 'colvis' },
-        { extend: 'copyHtml5' },
+        { extend: 'copy' },
         { extend: 'csv' },
-        { extend: 'excelHtml5', title: 'ExampleFile' },
-        // { extend: 'pdf', title: 'ExampleFile' },
+        { extend: 'excel', title: 'ExampleFile' },
+        { extend: 'pdf', title: 'ExampleFile' },
         {
-          text: 'Some button',
-          key: '1',
-          action: function (e, dt, node, config) {
-            alert('Button activated');
+          extend: 'print',
+          customize: function (win) {
+            $(win.document.body).addClass('white-bg');
+            $(win.document.body).css('font-size', '10px');
+
+            $(win.document.body).find('table')
+              .addClass('compact')
+              .css('font-size', 'inherit');
           }
-        }
+        }      
       ]
     };
   }

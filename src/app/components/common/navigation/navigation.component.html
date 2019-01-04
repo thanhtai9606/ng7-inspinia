@@ -23,7 +23,7 @@
         </div>
       </li> 
       <li [ngClass]="{active: activeRoute('mainView')}">
-        <a data-toggle="dropdown" class="dropdown-toggle" [routerLink]="['/mainView']"><i class="fa fa-th-large"></i><span class="nav-label">Dashboards</span><span
+        <a  [routerLink]="['/mainView']"><i class="fa fa-th-large"></i><span class="nav-label">Dashboards</span><span
             class="fa arrow"></span></a>
         <ul class="nav nav-second-level collapse" [ngClass]="{in: activeRoute('mainView')}">
           <li [ngClass]="{active: activeRoute('dashView1')}" ><a [routerLink]="['/dashView1']" routerLinkActive="active" >Dashboard v1</a></li>

@@ -4,11 +4,14 @@ import { MinorViewComponent } from './minor-view.component';
 import { TablesComponent } from './tables/tables.component';
 import { FormViewComponent } from './form-view/form-view.component';
 import { DataTablesModule } from 'angular-datatables';
+import {BsDatepickerModule} from 'ngx-bootstrap';
+
 @NgModule({
   declarations: [MinorViewComponent, TablesComponent, FormViewComponent],
   imports: [
     CommonModule,
-    DataTablesModule
+    DataTablesModule,
+    BsDatepickerModule.forRoot()
   ],
   exports:[ MinorViewComponent]
 })

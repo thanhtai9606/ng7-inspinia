@@ -24,12 +24,14 @@
               "src/assets/img"
             ],
             "styles": [
-              "vendors/node_modules/bootstrap/dist/css/bootstrap.css",
+              "vendors/node_modules/bootstrap/dist/css/bootstrap.min.css",
               "vendors/node_modules/font-awesome/css/font-awesome.css",
               "vendors/node_modules/ngx-toastr/toastr.css",
-              "node_modules/datatables.net-dt/css/datatables.min.css",
+              "node_modules/datatables.net-bs/css/dataTables.bootstrap.css",
               "node_modules/datatables.net-buttons-dt/css/buttons.dataTables.css",
-              // "node_modules/datatables.net-dt/css/jquery.dataTables.css",
+              "node_modules/datatables/buttons.bootstrap.min.css",           
+              "node_modules/datatables/fixedHeader.bootstrap.min.css",  
+              "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",              
               "src/assets/styles/styles.css",
               "src/assets/styles/animate.css"      
             ],
@@ -40,15 +42,16 @@
               "vendors/node_modules/bootstrap/dist/js/bootstrap.js",
               "vendors/node_modules/jquery-slimscroll/jquery.slimscroll.min.js",
               "node_modules/wowjs/dist/wow.js",
-            //  "node_modules/datatables.net/js/jquery.dataTables.js",
-              "node_modules/datatables.net/js/datatables.min.js",
-              "node_modules/jszip/dist/jszip.js",
-              "node_modules/datatables.net-bs/js/dataTables.bootstrap.js",
-              "node_modules/datatables.net-buttons/js/buttons.bootstrap.js",
+              
+              "node_modules/datatables.net/js/jquery.dataTables.min.js",
+              "node_modules/datatables.net-bs/js/dataTables.bootstrap.min.js",
+              "node_modules/jszip/dist/jszip.min.js",
+              "node_modules/datatables.net-buttons/js/dataTables.buttons.js",
               "node_modules/datatables.net-buttons/js/buttons.colVis.js",
               "node_modules/datatables.net-buttons/js/buttons.flash.js",
               "node_modules/datatables.net-buttons/js/buttons.html5.js",
-              "node_modules/datatables.net-buttons/js/buttons.print.js"
+              "node_modules/datatables/buttons.print.min.js",
+              "node_modules/datatables/dataTables.fixedHeader.min.js"           
             ]
           },
           "configurations": {
