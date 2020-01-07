@@ -19,7 +19,7 @@
     "@angular/platform-browser": "~7.1.0",
     "@angular/platform-browser-dynamic": "~7.1.0",
     "@angular/router": "~7.1.0",
-    "angular": "^1.7.5",
+    "angular": "^1.7.9",
     "angular-datatables": "^7.0.0",
     "angular-switchery": "^0.7.1",
     "core-js": "^2.5.4",
