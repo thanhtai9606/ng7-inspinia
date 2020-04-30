@@ -32,7 +32,7 @@
     "datatables.net-dt": "^1.10.19",
     "datatables.net-fixedheader-bs": "^3.1.5",
     "datatables.net-responsive-bs": "^2.2.3",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "jszip": "^3.1.5",
     "ngx-bootstrap": "^3.1.4",
     "ngx-toastr": "^9.1.1",
