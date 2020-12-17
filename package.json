@@ -23,7 +23,7 @@
     "angular-datatables": "^7.0.0",
     "angular-switchery": "^0.7.1",
     "core-js": "^2.5.4",
-    "datatables.net": "^1.10.19",
+    "datatables.net": "^1.10.22",
     "datatables.net-bs": "^1.10.19",
     "datatables.net-buttons": "^1.5.4",
     "datatables.net-buttons-bs": "^1.5.4",
