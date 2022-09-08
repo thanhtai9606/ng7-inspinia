@@ -33,7 +33,7 @@
     "datatables.net-fixedheader-bs": "^3.1.5",
     "datatables.net-responsive-bs": "^2.2.3",
     "jquery": "^3.3.1",
-    "jszip": "^3.1.5",
+    "jszip": "^3.7.0",
     "ngx-bootstrap": "^3.1.4",
     "ngx-toastr": "^9.1.1",
     "ngx-wow": "^2.0.0",
